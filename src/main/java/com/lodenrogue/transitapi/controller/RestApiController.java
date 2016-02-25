@@ -5,21 +5,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lodenrogue.transitapi.service.rest.AgencyFacade;
-import com.lodenrogue.transitapi.service.rest.Api;
-import com.lodenrogue.transitapi.service.rest.FareFacade;
-import com.lodenrogue.transitapi.service.rest.FareRuleFacade;
-import com.lodenrogue.transitapi.service.rest.FeedInfoFacade;
-import com.lodenrogue.transitapi.service.rest.FrequencyFacade;
-import com.lodenrogue.transitapi.service.rest.RestResponse;
-import com.lodenrogue.transitapi.service.rest.RouteFacade;
-import com.lodenrogue.transitapi.service.rest.ServiceCalendarFacade;
-import com.lodenrogue.transitapi.service.rest.ServiceDateFacade;
-import com.lodenrogue.transitapi.service.rest.ShapeFacade;
-import com.lodenrogue.transitapi.service.rest.StopFacade;
-import com.lodenrogue.transitapi.service.rest.StopTimeFacade;
-import com.lodenrogue.transitapi.service.rest.TransferFacade;
-import com.lodenrogue.transitapi.service.rest.TripFacade;
+import com.lodenrogue.transitapi.service.Api;
+import com.lodenrogue.transitapi.service.RestResponse;
+import com.lodenrogue.transitapi.service.facade.AgencyFacade;
+import com.lodenrogue.transitapi.service.facade.FareFacade;
+import com.lodenrogue.transitapi.service.facade.FareRuleFacade;
+import com.lodenrogue.transitapi.service.facade.FeedInfoFacade;
+import com.lodenrogue.transitapi.service.facade.FrequencyFacade;
+import com.lodenrogue.transitapi.service.facade.RouteFacade;
+import com.lodenrogue.transitapi.service.facade.ServiceCalendarFacade;
+import com.lodenrogue.transitapi.service.facade.ServiceDateFacade;
+import com.lodenrogue.transitapi.service.facade.ShapeFacade;
+import com.lodenrogue.transitapi.service.facade.StopFacade;
+import com.lodenrogue.transitapi.service.facade.StopTimeFacade;
+import com.lodenrogue.transitapi.service.facade.TransferFacade;
+import com.lodenrogue.transitapi.service.facade.TripFacade;
 
 @RestController
 public class RestApiController {

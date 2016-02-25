@@ -1,4 +1,4 @@
-package com.lodenrogue.transitapi.service.rest;
+package com.lodenrogue.transitapi.service;
 
 public class Resource {
 	private String name;

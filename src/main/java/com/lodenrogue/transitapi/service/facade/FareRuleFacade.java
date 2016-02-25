@@ -1,9 +1,11 @@
-package com.lodenrogue.transitapi.service.rest;
+package com.lodenrogue.transitapi.service.facade;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.lodenrogue.transitapi.model.FareRule;
+import com.lodenrogue.transitapi.service.Api;
+import com.lodenrogue.transitapi.service.Resource;
 
 public class FareRuleFacade extends m_AbstractFacade<FareRule> {
 

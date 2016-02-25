@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package com.lodenrogue.transitapi.service.rest;
+package com.lodenrogue.transitapi.service.facade;
 
 import java.util.List;
 

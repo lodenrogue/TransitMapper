@@ -1,4 +1,4 @@
-package com.lodenrogue.transitapi.service.rest;
+package com.lodenrogue.transitapi.service.facade;
 
 import java.io.Serializable;
 import java.util.List;
@@ -7,6 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Projections;
 
 import com.lodenrogue.transitapi.model.Database;
+import com.lodenrogue.transitapi.service.Api;
+import com.lodenrogue.transitapi.service.Resource;
 
 public abstract class m_AbstractFacade<T> {
 	private Class<T> entityClass;
