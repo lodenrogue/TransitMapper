@@ -1,11 +1,7 @@
 package com.lodenrogue.transitapi.service.facade;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.lodenrogue.transitapi.model.Fare;
 import com.lodenrogue.transitapi.service.Api;
-import com.lodenrogue.transitapi.service.Resource;
 
 public class FareFacade extends m_AbstractFacade<Fare> {
 
@@ -14,14 +10,8 @@ public class FareFacade extends m_AbstractFacade<Fare> {
 	}
 
 	@Override
-	protected List<Resource> buildResourceList() {
-		@SuppressWarnings("unchecked")
-		List<String> results = getSession().createQuery("SELECT fare.fareId FROM Fare fare").list();
-		List<Resource> resources = new ArrayList<Resource>();
-		for (String r : results) {
-			resources.add(new Resource(r, Api.FARE_ATTRIBUTES_URL + "/" + r));
-		}
-		return resources;
+	public String getApiUrl() {
+		return Api.FARE_ATTRIBUTES_URL;
 	}
 
 }

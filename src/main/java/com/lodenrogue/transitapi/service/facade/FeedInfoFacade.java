@@ -1,11 +1,7 @@
 package com.lodenrogue.transitapi.service.facade;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.lodenrogue.transitapi.model.FeedInfo;
 import com.lodenrogue.transitapi.service.Api;
-import com.lodenrogue.transitapi.service.Resource;
 
 public class FeedInfoFacade extends m_AbstractFacade<FeedInfo> {
 
@@ -14,14 +10,8 @@ public class FeedInfoFacade extends m_AbstractFacade<FeedInfo> {
 	}
 
 	@Override
-	protected List<Resource> buildResourceList() {
-		@SuppressWarnings("unchecked")
-		List<Integer> results = getSession().createQuery("SELECT feedInfo.id FROM FeedInfo feedInfo").list();
-		List<Resource> resources = new ArrayList<Resource>();
-		for (int r : results) {
-			resources.add(new Resource(r + "", Api.FEED_INFO_URL + "/" + r));
-		}
-		return resources;
+	public String getApiUrl() {
+		return Api.FEED_INFO_URL;
 	}
 
 }
