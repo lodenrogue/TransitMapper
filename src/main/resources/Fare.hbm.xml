@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Fare" table="fare_attributes">
+		<id name="fareId" column="fare_id">
+			<generator class="assigned" />
+		</id>
+		<property name="price" column="price" />
+		<property name="currencyType" column="currency_type" />
+		<property name="paymentMethod" column="payment_method" />
+		<property name="transfers" column="transfers" />
+		<property name="transferDuration" column="transfer_duration" />
+	</class>
+</hibernate-mapping>

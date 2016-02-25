@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Shape" table="shapes">
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="shapeId" column="shape_id" />
+		<property name="pointLat" column="shape_pt_lat" />
+		<property name="pointLon" column="shape_pt_lon" />
+		<property name="pointSequence" column="shape_pt_sequence" />
+		<property name="distanceTraveled" column="shape_dist_traveled"
+			not-null="false" />
+	</class>
+</hibernate-mapping>

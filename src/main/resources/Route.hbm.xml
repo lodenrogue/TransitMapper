@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Route" table="routes">
+		<id name="routeId" column="route_id">
+			<generator class="assigned" />
+		</id>
+		<property name="agencyId" column="agency_id" not-null="false" />
+		<property name="shortName" column="route_short_name" />
+		<property name="longName" column="route_long_name" />
+		<property name="description" column="route_desc" not-null="false" />
+		<property name="type" column="route_type" />
+		<property name="url" column="route_url" not-null="false" />
+		<property name="color" column="route_color" not-null="false" />
+		<property name="textColor" column="route_text_color"
+			not-null="false" />
+	</class>
+</hibernate-mapping>

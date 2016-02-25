@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Frequency" table="frequencies">
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="tripId" column="trip_id" />
+		<property name="startTime" column="start_time" />
+		<property name="endTime" column="end_time" />
+		<property name="headwaySecs" column="headway_secs" />
+		<property name="exactTimes" column="exact_times" not-null="false" />
+	</class>
+</hibernate-mapping>

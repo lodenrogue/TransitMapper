@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.ServiceCalendar" table="calendar">
+		<id name="serviceId" column="service_id">
+			<generator class="assigned" />
+		</id>
+		<property name="monday" column="monday" />
+		<property name="tuesday" column="tuesday" />
+		<property name="wednesday" column="wednesday" />
+		<property name="thursday" column="thursday" />
+		<property name="friday" column="friday" />
+		<property name="saturday" column="saturday" />
+		<property name="sunday" column="sunday" />
+		<property name="startDate" column="start_date" />
+		<property name="endDate" column="end_date" />
+	</class>
+</hibernate-mapping>

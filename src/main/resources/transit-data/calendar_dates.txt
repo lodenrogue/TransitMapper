@@ -1,0 +1,8 @@
+service_id,date,exception_type
+15OCT_s,20151126,1
+15OCT_s,20151225,1
+15OCT_s,20160101,1
+15OCT_muwtf,20151126,2
+15OCT_muwtf,20151225,2
+15OCT_muwtf,20160101,2
+

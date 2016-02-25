@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.StopTime" table="stop_times">
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="tripId" column="trip_id" />
+		<property name="arrivalTime" column="arrival_time" />
+		<property name="departureTime" column="departure_time" />
+		<property name="stopId" column="stop_id" />
+		<property name="stopSequence" column="stop_sequence" />
+		<property name="stopHeadsign" column="stop_headsign"
+			not-null="false" />
+		<property name="pickupType" column="pickup_type" not-null="false" />
+		<property name="dropOffType" column="drop_off_type" not-null="false" />
+		<property name="shapeDistTraveled" column="shape_dist_traveled"
+			not-null="false" />
+		<property name="timepoint" column="timepoint" not-null="false" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:8889/test</property>
+		<property name="hibernate.connection.username">mh</property>
+		<property name="hibernate.connection.password">password</property>
+
+		<!-- JDBC connection pool size -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<!-- Echo all SQL to stdout -->
+		<property name="show_sql">false</property>
+
+		<!-- Model classes -->
+		<mapping resource="Agency.hbm.xml" />
+		<mapping resource="Stop.hbm.xml" />
+		<mapping resource="StopTime.hbm.xml" />
+		<mapping resource="Route.hbm.xml" />
+		<mapping resource="Trip.hbm.xml" />
+		<mapping resource="ServiceCalendar.hbm.xml" />
+		<mapping resource="ServiceDate.hbm.xml" />
+		<mapping resource="Fare.hbm.xml" />
+		<mapping resource="FareRule.hbm.xml" />
+		<mapping resource="Shape.hbm.xml" />
+		<mapping resource="Frequency.hbm.xml" />
+		<mapping resource="Transfer.hbm.xml" />
+		<mapping resource="FeedInfo.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

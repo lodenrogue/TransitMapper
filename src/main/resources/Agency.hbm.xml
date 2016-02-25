@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Agency" table="agency">
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="agencyId" column="agency_id" not-null="false" />
+		<property name="name" column="agency_name" />
+		<property name="url" column="agency_url" />
+		<property name="timezone" column="agency_timezone" />
+		<property name="language" column="agency_lang" not-null="false" />
+		<property name="phone" column="agency_phone" not-null="false" />
+		<property name="fareUrl" column="agency_fare_url" not-null="false" />
+		<property name="email" column="agency_email" not-null="false" />
+	</class>
+</hibernate-mapping>

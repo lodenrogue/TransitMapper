@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Stop" table="stops">
+		<id name="stopId" column="stop_id">
+			<generator class="assigned" />
+		</id>
+		<property name="code" column="stop_code" not-null="false" />
+		<property name="name" column="stop_name" />
+		<property name="description" column="stop_desc" not-null="false" />
+		<property name="lat" column="stop_lat" />
+		<property name="lon" column="stop_lon" />
+		<property name="zoneId" column="zone_id" not-null="false" />
+		<property name="url" column="stop_url" not-null="false" />
+		<property name="locationType" column="location_type"
+			not-null="false" />
+		<property name="parentStation" column="parent_station"
+			not-null="false" />
+		<property name="timezone" column="stop_timezone" not-null="false" />
+		<property name="wheelchairBoarding" column="wheelchair_boarding"
+			not-null="false" />
+	</class>
+</hibernate-mapping>

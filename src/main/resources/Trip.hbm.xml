@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lodenrogue.transitapi.model.Trip" table="trips">
+		<id name="tripId" column="trip_id">
+			<generator class="assigned" />
+		</id>
+		<property name="routeId" column="route_id" />
+		<property name="serviceId" column="service_id" />
+		<property name="headsign" column="trip_headsign" not-null="false" />
+		<property name="shortName" column="trip_short_name" not-null="false" />
+		<property name="directionId" column="direction_id" not-null="false" />
+		<property name="blockId" column="block_id" not-null="false" />
+		<property name="shapeId" column="shape_id" not-null="false" />
+		<property name="wheelchairAccessible" column="wheelchair_accessible"
+			not-null="false" />
+		<property name="bikesAllowed" column="bikes_allowed"
+			not-null="false" />
+	</class>
+</hibernate-mapping>
