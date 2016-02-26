@@ -8,3 +8,7 @@
 .springBeans
 
 target/*
+
+src/main/resources/production-hibernate.cfg.xml
+
+src/main/java/com/lodenrogue/transitapi/TestMain.java

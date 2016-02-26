@@ -6,7 +6,7 @@ public class Api {
 
 	}
 
-	public static final int MAX_RESULT_SIZE = 20;
+	public static final int DEFAULT_RESULT_SIZE = 30;
 
 	public static final String BASE_URL = "/api";
 

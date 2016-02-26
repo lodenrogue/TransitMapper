@@ -6,8 +6,8 @@ public class Response {
 	private int status;
 	private long total;
 	private long count;
-	private String nextPage;
 	private String prevPage;
+	private String nextPage;
 	private Object data;
 
 	public Response(Object data) {
