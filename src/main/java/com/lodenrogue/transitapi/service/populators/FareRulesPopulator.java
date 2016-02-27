@@ -1,7 +1,7 @@
 package com.lodenrogue.transitapi.service.populators;
 
-import com.lodenrogue.transitapi.model.Database;
 import com.lodenrogue.transitapi.model.FareRule;
+import com.lodenrogue.transitapi.persistance.Database;
 
 public class FareRulesPopulator extends Populator<FareRule> {
 

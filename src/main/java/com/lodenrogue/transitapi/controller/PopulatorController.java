@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.lodenrogue.transitapi.model.Database;
+import com.lodenrogue.transitapi.persistance.Database;
 import com.lodenrogue.transitapi.service.populators.AgencyPopulator;
 import com.lodenrogue.transitapi.service.populators.FaresPopulator;
 import com.lodenrogue.transitapi.service.populators.FareRulesPopulator;

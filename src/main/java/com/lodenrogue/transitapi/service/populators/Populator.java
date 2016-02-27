@@ -9,7 +9,7 @@ import org.hibernate.Session;
 import org.supercsv.io.CsvListReader;
 import org.supercsv.prefs.CsvPreference;
 
-import com.lodenrogue.transitapi.model.Database;
+import com.lodenrogue.transitapi.persistance.Database;
 
 abstract class Populator<T> {
 	protected String[] headers;

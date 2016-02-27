@@ -1,7 +1,7 @@
 package com.lodenrogue.transitapi.service.populators;
 
 import com.lodenrogue.transitapi.model.Agency;
-import com.lodenrogue.transitapi.model.Database;
+import com.lodenrogue.transitapi.persistance.Database;
 
 public class AgencyPopulator extends Populator<Agency> {
 

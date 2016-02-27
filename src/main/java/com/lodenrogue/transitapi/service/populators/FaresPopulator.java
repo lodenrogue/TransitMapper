@@ -2,8 +2,8 @@ package com.lodenrogue.transitapi.service.populators;
 
 import java.math.BigDecimal;
 
-import com.lodenrogue.transitapi.model.Database;
 import com.lodenrogue.transitapi.model.Fare;
+import com.lodenrogue.transitapi.persistance.Database;
 
 public class FaresPopulator extends Populator<Fare> {
 

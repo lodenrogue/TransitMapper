@@ -2,8 +2,8 @@ package com.lodenrogue.transitapi.service.populators;
 
 import java.math.BigDecimal;
 
-import com.lodenrogue.transitapi.model.Database;
 import com.lodenrogue.transitapi.model.Shape;
+import com.lodenrogue.transitapi.persistance.Database;
 import com.lodenrogue.transitapi.utils.MathUtils;
 
 public class ShapesPopulator extends Populator<Shape> {

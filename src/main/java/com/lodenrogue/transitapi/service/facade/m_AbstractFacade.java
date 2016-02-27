@@ -7,7 +7,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.criterion.Projections;
 
-import com.lodenrogue.transitapi.model.Database;
+import com.lodenrogue.transitapi.persistance.Database;
 
 public abstract class m_AbstractFacade<T> {
 	private Class<T> entityClass;

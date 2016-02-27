@@ -1,4 +1,4 @@
-package com.lodenrogue.transitapi.model;
+package com.lodenrogue.transitapi.persistance;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

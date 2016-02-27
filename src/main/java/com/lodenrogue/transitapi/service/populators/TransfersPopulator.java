@@ -1,7 +1,7 @@
 package com.lodenrogue.transitapi.service.populators;
 
-import com.lodenrogue.transitapi.model.Database;
 import com.lodenrogue.transitapi.model.Transfer;
+import com.lodenrogue.transitapi.persistance.Database;
 import com.lodenrogue.transitapi.utils.MathUtils;
 
 public class TransfersPopulator extends Populator<Transfer> {
